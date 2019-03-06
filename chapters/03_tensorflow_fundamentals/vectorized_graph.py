@@ -38,7 +38,7 @@ with graph.as_default():
     # Summary Operations
     with tf.name_scope("summaries"):
         #tf.scalar_summary(b'output', output, name="output_summary")  # Creates summary for output node
-        tf.summary.scalar('prod_summary', output)  # Creates summary for output node
+        tf.summary.scalar('output_summary', output)  # Creates summary for output node
         #tf.scalar_summary(b'product of inputs', b, name="prod_summary")
         tf.summary.scalar('prod_summary', b)
         #tf.scalar_summary(b'sum of inputs', c, name="sum_summary")
